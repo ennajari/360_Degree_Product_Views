@@ -1,8 +1,9 @@
-# 360_Degree_Product_Views
-Les vues de produits à 360 degrés permettent aux utilisateurs de voir un produit sous tous les angles en faisant pivoter l'image avec leur souris ou sur un écran tactile. Cette fonction immersive offre une expérience interactive, aidant les clients à comprendre mieux les détails du produit, comme s'ils le manipulaient.
 # Projet de Stage : Vues de Produits à 360 Degrés
 
 ## Description du Projet
+# 360_Degree_Product_Views
+Les vues de produits à 360 degrés permettent aux utilisateurs de voir un produit sous tous les angles en faisant pivoter l'image avec leur souris ou sur un écran tactile. Cette fonction immersive offre une expérience interactive, aidant les clients à comprendre mieux les détails du produit, comme s'ils le manipulaient.
+
 
 Ce projet consiste à développer une fonctionnalité permettant aux utilisateurs de visualiser des produits sous tous les angles en les faisant pivoter à l'aide de leur souris ou de leur doigt sur un écran tactile. Cette fonctionnalité offre une expérience immersive et interactive, permettant aux clients de mieux comprendre les caractéristiques et les détails des produits, comme s'ils les manipulaient physiquement.
 
