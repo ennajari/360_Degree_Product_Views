@@ -7,7 +7,37 @@ Ce projet vise à développer une fonctionnalité de vues de produits à 360 deg
 - Rotation de l'image du produit à 360 degrés
 - Interaction via souris ou écran tactile
 - Visualisation détaillée des caractéristiques du produit
-
+## Structeur de project:
+product-360-view/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           ├── Product.java
+│   │   │           └── ProductServlet.java
+│   │   │
+│   │   ├── webapp/
+│   │   │   ├── index.html
+│   │   │   ├── style.css
+│   │   │   ├── script.js
+│   │   │   └── images/
+│   │   │       └── product/
+│   │   │           ├── image_001.jpg
+│   │   │           ├── image_002.jpg
+│   │   │           └── ...
+│   │   │
+│   │   └── WEB-INF/
+│   │       └── web.xml
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── ProductTest.java
+│
+└── pom.xml 
 ## Technologies
 - Java EE (ou technologie compatible avec Java EE)
 
