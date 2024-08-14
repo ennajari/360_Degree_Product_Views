@@ -7,7 +7,9 @@ Ce projet vise à développer une fonctionnalité de vues de produits à 360 deg
 - Rotation de l'image du produit à 360 degrés
 - Interaction via souris ou écran tactile
 - Visualisation détaillée des caractéristiques du produit
+  
 ## Structeur de project:
+<pre>
 product-360-view/
 │
 ├── src/
@@ -38,8 +40,11 @@ product-360-view/
 │                   └── ProductTest.java
 │
 └── pom.xml 
-## Technologies
-- Java EE (ou technologie compatible avec Java EE)
+  </pre>
+## Prérequis
+- Java Development Kit (JDK) 11 ou supérieur
+- Apache Maven 3.6 ou supérieur
+- Serveur d'application compatible Java EE (ex: Apache Tomcat)
 
 ## Structure du Projet
 1. Analyse fonctionnelle
