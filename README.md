@@ -1,56 +1,43 @@
-# Projet de Stage : Vues de Produits à 360 Degrés
+# Projet de Vues de Produits à 360 Degrés
 
-## Description du Projet
-# 360_Degree_Product_Views
-Les vues de produits à 360 degrés permettent aux utilisateurs de voir un produit sous tous les angles en faisant pivoter l'image avec leur souris ou sur un écran tactile. Cette fonction immersive offre une expérience interactive, aidant les clients à comprendre mieux les détails du produit, comme s'ils le manipulaient.
+## Description
+Ce projet vise à développer une fonctionnalité de vues de produits à 360 degrés, permettant aux utilisateurs de visualiser un produit sous tous les angles. Cette expérience interactive et immersive aide les clients à mieux comprendre les caractéristiques et les détails d'un produit, comme s'ils le manipulaient physiquement.
+
+## Fonctionnalités
+- Rotation de l'image du produit à 360 degrés
+- Interaction via souris ou écran tactile
+- Visualisation détaillée des caractéristiques du produit
+
+## Technologies
+- Java EE (ou technologie compatible avec Java EE)
+
+## Structure du Projet
+1. Analyse fonctionnelle
+2. Analyse technique
+3. Conception
+4. Développement
+5. Tests
+6. Documentation
+
+## Installation
 
 
-Ce projet consiste à développer une fonctionnalité permettant aux utilisateurs de visualiser des produits sous tous les angles en les faisant pivoter à l'aide de leur souris ou de leur doigt sur un écran tactile. Cette fonctionnalité offre une expérience immersive et interactive, permettant aux clients de mieux comprendre les caractéristiques et les détails des produits, comme s'ils les manipulaient physiquement.
+## Utilisation
 
-## Technologies Utilisées
 
-- **Java EE** : Framework principal pour le développement de l'application.
-- **Autres technologies** : Intégration avec d'autres technologies compatibles avec Java EE pour améliorer l'expérience utilisateur.
+## Planning du Projet
+1. Étape 1 : Analyse fonctionnelle (Search for Key Features and functions)
+2. Étape 2 : Analyse technique
+3. Étape 3 : Conception
+4. Étape 4 : Développement
+5. Étape 5 : Test
+6. Étape 6 : Rédaction de Rapport et Présentation
 
-## Étapes du Projet
+## Suivi du Projet
 
-1. **Analyse Fonctionnelle** : Recherche des fonctionnalités clés et des exigences techniques.
-2. **Analyse Technique** : Évaluation des besoins techniques pour implémenter les fonctionnalités identifiées.
-3. **Conception** : Conception des interfaces et des flux de travail pour la fonctionnalité de vue à 360 degrés.
-4. **Développement** : Implémentation du code pour les vues de produits à 360 degrés.
-5. **Test** : Validation de la fonctionnalité pour s'assurer de son bon fonctionnement.
-6. **Rédaction de Rapport et Présentation** : Rédaction d'un rapport final et préparation de la présentation du projet.
-
-## Communication
-
-- **Rapport d'Avancement** : Un rapport hebdomadaire sur l'avancement du projet sera partagé chaque Vendredi, incluant les défis rencontrés.
-
-## Installation et Lancement
-
-1. **Cloner le dépôt** :
-    ```bash
-    git clone https://github.com/votre-utilisateur/votre-repo.git
-    ```
-
-2. **Accéder au répertoire** :
-    ```bash
-    cd votre-repo
-    ```
-
-3. **Compiler le projet** :
-    ```bash
-    mvn clean install
-    ```
-
-4. **Déployer sur un serveur** :
-    - Utiliser un serveur d'application compatible Java EE (comme GlassFish ou WildFly) pour déployer l'application.
 
 ## Contributeurs
-
-- **Nom du stagiaire** : Responsable du développement de la fonctionnalité.
-- **Nom du tuteur** : Superviseur du projet.
-
+- Mohamed
+- Abdellah
+- 
 ## Contact
-
-Pour toute question, n'hésitez pas à contacter **Nom du stagiaire** à l'adresse email : [votre.email@example.com](mailto:votre.email@example.com).
-
