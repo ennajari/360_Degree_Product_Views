@@ -14,7 +14,6 @@ The project directory is organized as follows:
 - **`requirements.txt`**: Lists the Python dependencies required for the project.
 - **`script.js`**: JavaScript file for client-side interactions.
 - **`styles.css`**: CSS file for styling the project.
-- **`str.py`**: Python script for additional functionality.
 - **`data/`**: Contains the input data and preprocessed images.
   - **`images/`**: Original images used in the project.
     - **`Ball_Cap/`**, **`Shoses/`**, **`triko/`**, **`watch/`**: Subfolders for different product categories.
