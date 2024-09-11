@@ -56,7 +56,7 @@ The project directory is organized as follows:
 
 Contributions to the project are welcome. Please fork the repository, make your changes, and submit a pull request.
 --------------------------------------------------------------------------
-360_Degree_Product_ViewsC/
+<pre>360_Degree_Product_ViewsC/
     ├── index.html
     ├── README.md
     ├── requirements.txt
@@ -92,3 +92,4 @@ Contributions to the project are welcome. Please fork the repository, make your 
         ├── reconstruction.py
         ├── stitching.py
         └── utils.py
+</pre>
