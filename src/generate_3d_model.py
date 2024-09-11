@@ -5,7 +5,6 @@ from mpl_toolkits.mplot3d import Axes3D
 def generate_simple_3d_model(camera_matrices):
     points = []
     for matrix in camera_matrices:
-        # Extract translation from the homography matrix
         tx = matrix[0, 2]
         ty = matrix[1, 2]
         tz = matrix[2, 2]

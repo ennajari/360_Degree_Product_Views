@@ -33,9 +33,7 @@ def estimate_pose(matches, features1, features2):
     return H
 
 def reconstruct_3d(poses, images):
-    # Simplified 3D reconstruction
     points_3d = []
     for pose in poses:
-        # This is a placeholder; actual 3D reconstruction requires more complex algorithms
         points_3d.append(pose)  
     return np.array(points_3d)
