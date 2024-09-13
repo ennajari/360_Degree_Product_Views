@@ -1,4 +1,4 @@
-// Données des produits (simulées)
+// Données des produits
 const products = [
     { id: 1, name: "Casquette", price: 39.99, image: "data/images/Ball_Cap/image1.png", images: 36, prefix: "data/images/Ball_Cap/image", rating: 4.5 },
     { id: 2, name: "Chaussures", price: 59.99, image: "data/images/Shoes/image1.png", images: 60, prefix: "data/images/Shoes/image", rating: 4.2 },
@@ -8,7 +8,6 @@ const products = [
 
 let cart = [];
 
-// Classe ProductViewer
 
 class ProductViewer {
     constructor(element) {
@@ -128,14 +127,12 @@ function generateStarRating(rating) {
     return '★'.repeat(fullStars) + (halfStar ? '½' : '') + '☆'.repeat(emptyStars);
 }
 
-// Fonction pour mettre à jour la quantité
 function updateQuantity(input, delta) {
     let value = parseInt(input.value) + delta;
     value = Math.max(1, Math.min(value, 10));
     input.value = value;
 }
 
-// Fonction pour ajouter au panier
 function addToCart(product, quantity) {
     const existingItem = cart.find(item => item.id === product.id);
     if (existingItem) {
@@ -147,14 +144,12 @@ function addToCart(product, quantity) {
     animateCartIcon();
 }
 
-// Fonction pour mettre à jour le compteur du panier
 function updateCartCount() {
     const cartCount = document.getElementById('cart-count');
     const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
     cartCount.textContent = totalItems;
 }
 
-// Fonction pour animer l'icône du panier
 function animateCartIcon() {
     const cartIcon = document.getElementById('cart-icon');
     cartIcon.classList.add('shake');
@@ -186,14 +181,12 @@ function showCart() {
     document.body.classList.add('modal-open');
 }
 
-// Fonction pour fermer le modal du panier
 function closeCart() {
     const cartModal = document.getElementById('cart-modal');
     cartModal.classList.add('hidden');
     document.body.classList.remove('modal-open');
 }
 
-// Fonction pour simuler le processus de commande
 function checkout() {
     alert('Merci pour votre commande !');
     cart = [];
@@ -201,7 +194,6 @@ function checkout() {
     closeCart();
 }
 
-// Écouteurs d'événements
 document.addEventListener('DOMContentLoaded', () => {
     displayProducts();
     

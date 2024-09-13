@@ -1,4 +1,3 @@
-/* Styles personnalisés */
 .product-viewer {
     width: 100%;
     height: 60%;
@@ -24,7 +23,6 @@
     cursor: grabbing;
 }
 
-/* Animation pour le panier */
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
@@ -37,12 +35,10 @@
     animation: shake 0.5s ease-in-out;
 }
 
-/* Styles pour le modal du panier */
 .modal-open {
     overflow: hidden;
 }
 
-/* Barre de recherche */
 .search-container {
     position: relative;
     width: 100%;
@@ -70,7 +66,6 @@
     color: #a0aec0;
 }
 
-/* Styles pour les boutons de quantité */
 .quantity-control {
     display: flex;
     align-items: center;
@@ -103,8 +98,6 @@
     border: 1px solid #e2e8f0;
     margin: 0 0.5rem;
 }
-
-/* Style pour le bouton "Ajouter au panier" */
 .add-to-cart-btn {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -114,7 +107,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour les étoiles de notation */
 .star-rating {
     display: flex;
     justify-content: center;
@@ -126,7 +118,6 @@
     font-size: 1.25rem;
 }
 
-/* Animation pour l'ajout au panier */
 @keyframes addToCart {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }

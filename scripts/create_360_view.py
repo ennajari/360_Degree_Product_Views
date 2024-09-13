@@ -1,22 +1,31 @@
+import os
 import cv2
 import numpy as np
-import os
-from pathlib import Path
+from PIL import Image
 
-def create_360_view(images_path, output_path):
-    images = [cv2.imread(os.path.join(images_path, img)) for img in sorted(os.listdir(images_path))]
-    if not images:
-        raise ValueError("No images found in the directory.")
+def create_360_view(input_folder, output_file, num_frames=36):
+    image_files = [f for f in os.listdir(input_folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
+    image_files.sort() 
 
-    # Assuming images are of the same size
-    height, width, _ = images[0].shape
-    video_writer = cv2.VideoWriter(output_path, cv2.VideoWriter_fourcc(*'XVID'), 20.0, (width, height))
+    first_image = cv2.imread(os.path.join(input_folder, image_files[0]))
+    height, width = first_image.shape[:2]
 
-    for img in images:
-        video_writer.write(img)
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+    out = cv2.VideoWriter(output_file, fourcc, 30, (width, height))
 
-    video_writer.release()
-    print(f"360-degree view video saved to {output_path}")
+    for _ in range(3):  
+        for image_file in image_files:
+            image_path = os.path.join(input_folder, image_file)
+            frame = cv2.imread(image_path)
+            
+            for _ in range(5):  
+                out.write(frame)
+
+    out.release()
+
+    print(f"360-degree view created and saved as {output_file}")
 
 if __name__ == "__main__":
-    create_360_view('data/images/Ball_Cap', 'output/ball_cap_360_view.avi')
+    input_folder = "data/images/Ball_Cap"  
+    output_file = "output/ball_cap_360_view.mp4"
+    create_360_view(input_folder, output_file)

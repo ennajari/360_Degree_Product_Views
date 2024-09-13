@@ -3,7 +3,7 @@
 
 ## Description
 
-The `360_Degree_Product_ViewsC` project is designed to create interactive 360-degree views of products using a collection of images. The project includes scripts for image preprocessing, 3D model generation, and visualization of the final results.
+The `360_Degree_Product_ViewsC` project is designed to create interactive 360-degree views of products using a collection of images or a 6 pics or vedio. The project includes scripts for image preprocessing, 3D model generation, and visualization of the final results.
 
 ## Project Structure
 
@@ -25,12 +25,6 @@ The project directory is organized as follows:
   - **`transformations.npy`**: NumPy file containing transformation data.
 - **`scripts/`**: Python scripts for specific tasks.
   - **`create_360_view.py`**: Script to generate a 360-degree view of a product.
-- **`src/`**: Main source code for the project.
-  - **`generate_3d_model.py`**: Script to generate a 3D model from images.
-  - **`reconstruction.py`**: Script for reconstructing the 3D model.
-  - **`stitching.py`**: Script to stitch images together.
-  - **`utils.py`**: Utility functions used throughout the project.
-
 ## Installation
 
 1. Clone the repository:
@@ -86,9 +80,4 @@ Contributions to the project are welcome. Please fork the repository, make your 
     │   └── transformations.npy
     ├── scripts/
     │   └── create_360_view.py
-    └── src/
-        ├── generate_3d_model.py
-        ├── reconstruction.py
-        ├── stitching.py
-        └── utils.py
 </pre>
