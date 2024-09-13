@@ -45,9 +45,6 @@ The project directory is organized as follows:
 3. Use the `create_360_view.py` script to generate the 360-degree view from the processed images.
 4. View the results in `output/` and adjust the visualization as needed.
 
-## Contributing
-
-Contributions to the project are welcome. Please fork the repository, make your changes, and submit a pull request.
 --------------------------------------------------------------------------
 <pre>360_Degree_Product_ViewsC/
     ├── index.html
