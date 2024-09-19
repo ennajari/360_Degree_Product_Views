@@ -73,6 +73,7 @@ Le répertoire du projet est organisé comme suit :
 
 ## Utilisation -1 
 
+<<<<<<< HEAD
 1. Ouvrez le fichier `index.html` dans un navigateur web moderne.
 
 2. Utilisez la souris pour faire pivoter les produits et voir les différents angles.
@@ -106,3 +107,38 @@ Le répertoire du projet est organisé comme suit :
 - OpenCV (pour le traitement d'images)
 - Jupyter Notebooks (pour l'analyse et le prétraitement des données)
 
+=======
+--------------------------------------------------------------------------
+<pre>360_Degree_Product_ViewsC/
+    ├── index.html
+    ├── README.md
+    ├── requirements.txt
+    ├── script.js
+    ├── styles.css
+    ├── data/
+    │   ├── images/
+    │   │   ├── Ball_Cap/
+    │   │   │   ├── image1.png
+    │   │   │   ├── image2.png
+    │   │   │   └── ... (autres images)
+    │   │   ├── Shoses/
+    │   │   ├── triko/
+    │   │   │   ├── image1.png
+    │   │   │   └── ... (autres images)
+    │   │   └── watch/
+    │   └── preprocessed/
+    │       ├── img1.jpg
+    │       ├── img2.jpg
+    │       └── ... (autres images)
+    ├── notebooks/
+    │   ├── image_preprocessing.nbconvert.ipynb
+    │   ├── model_evaluation.ipynb
+    │   └── stitching_and_reconstruction.nbconvert.ipynb
+    ├── output/
+    │   ├── ball_cap_360_view.gif
+    │   ├── stitched_image.jpg
+    │   └── transformations.npy
+    ├── scripts/
+    │   └── create_360_view.py
+</pre>
+>>>>>>> 115cc9a4d6ad1dfc4a9c349f81058257aa0956c0
