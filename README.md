@@ -23,9 +23,9 @@ L'application web 360_Degree_Product_Views offre une expérience immersive pour 
 │   │   └── watch/
 │   └── preprocessed/
 ├── notebooks/
-│   ├── image_preprocessing.nbconvert.ipynb
+│   ├── image_preprocessing.ipynb
 │   ├── model_evaluation.ipynb
-│   └── stitching_and_reconstruction.nbconvert.ipynb
+│   └── stitching_and_reconstruction.ipynb
 ├── output/
 │   ├── ball_cap_360_view.gif
 │   ├── stitched_image.jpg
