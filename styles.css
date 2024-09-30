@@ -98,6 +98,7 @@
     border: 1px solid #e2e8f0;
     margin: 0 0.5rem;
 }
+
 .add-to-cart-btn {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -106,6 +107,7 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .star-rating {
     display: flex;
     justify-content: center;
@@ -125,4 +127,32 @@
 
 .add-to-cart-animation {
     animation: addToCart 0.3s ease-in-out;
+}
+
+.zoom-btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.zoom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#zoom-modal {
+    transition: opacity 0.3s ease;
+}
+
+#zoom-modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#zoom-modal:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#zoomed-image {
+    max-height: 80vh;
+    object-fit: contain;
 }

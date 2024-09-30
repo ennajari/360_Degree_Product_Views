@@ -8,7 +8,6 @@ const products = [
 
 let cart = [];
 
-
 class ProductViewer {
     constructor(element) {
         this.element = element;
@@ -78,7 +77,7 @@ class ProductViewer {
         img.src = `${this.imagePrefix}${this.currentImageIndex}.png`;
     }
 }
-// Fonction pour afficher les produits
+
 function displayProducts() {
     const productList = document.getElementById('product-list');
     productList.innerHTML = '';
@@ -97,8 +96,11 @@ function displayProducts() {
                     <input type="number" class="quantity-input" value="1" min="1" max="10">
                     <button class="quantity-btn plus">+</button>
                 </div>
-                <button class="add-to-cart-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded w-full" data-id="${product.id}">
+                <button class="add-to-cart-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded w-full mb-2" data-id="${product.id}">
                     Ajouter au panier
+                </button>
+                <button class="zoom-btn bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded w-full" data-image="${product.image}">
+                    Zoom
                 </button>
             </div>
         `;
@@ -115,10 +117,12 @@ function displayProducts() {
         
         const addToCartBtn = productElement.querySelector('.add-to-cart-btn');
         addToCartBtn.addEventListener('click', () => addToCart(product, parseInt(quantityInput.value)));
+
+        const zoomBtn = productElement.querySelector('.zoom-btn');
+        zoomBtn.addEventListener('click', () => showZoomedImage(product.image));
     });
 }
 
-// Fonction pour générer les étoiles de notation
 function generateStarRating(rating) {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 >= 0.5;
@@ -156,7 +160,6 @@ function animateCartIcon() {
     setTimeout(() => cartIcon.classList.remove('shake'), 500);
 }
 
-// Fonction pour afficher le modal du panier
 function showCart() {
     const cartModal = document.getElementById('cart-modal');
     const cartItems = document.getElementById('cart-items');
@@ -194,6 +197,21 @@ function checkout() {
     closeCart();
 }
 
+function showZoomedImage(imageSrc) {
+    const zoomModal = document.getElementById('zoom-modal');
+    const zoomedImage = document.getElementById('zoomed-image');
+    
+    zoomedImage.src = imageSrc;
+    zoomModal.classList.remove('hidden');
+    document.body.classList.add('modal-open');
+}
+
+function closeZoomedImage() {
+    const zoomModal = document.getElementById('zoom-modal');
+    zoomModal.classList.add('hidden');
+    document.body.classList.remove('modal-open');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     displayProducts();
     
@@ -205,4 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const checkoutBtn = document.getElementById('checkout');
     checkoutBtn.addEventListener('click', checkout);
+
+    const closeZoomBtn = document.getElementById('close-zoom');
+    closeZoomBtn.addEventListener('click', closeZoomedImage);
 });
