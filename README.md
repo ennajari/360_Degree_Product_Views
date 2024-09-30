@@ -141,4 +141,3 @@ Le répertoire du projet est organisé comme suit :
     ├── scripts/
     │   └── create_360_view.py
 </pre>
->>>>>>> 115cc9a4d6ad1dfc4a9c349f81058257aa0956c0
