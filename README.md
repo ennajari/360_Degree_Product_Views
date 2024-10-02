@@ -73,7 +73,6 @@ Le répertoire du projet est organisé comme suit :
 
 ## Utilisation -1 
 
-<<<<<<< HEAD
 1. Ouvrez le fichier `index.html` dans un navigateur web moderne.
 
 2. Utilisez la souris pour faire pivoter les produits et voir les différents angles.
