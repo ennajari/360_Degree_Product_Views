@@ -1,7 +1,7 @@
 // Données des produits
 const products = [
     { id: 1, name: "Casquette", price: 39.99, image: "data/images/Ball_Cap/image1.png", images: 36, prefix: "data/images/Ball_Cap/image", rating: 4.5 },
-    { id: 2, name: "Chaussures", price: 59.99, image: "data/images/Shoes/image1.png", images: 60, prefix: "data/images/Shoes/image", rating: 4.2 },
+    { id: 2, name: "Chaussures", price: 59.99, image: "data/images/Shoses/image1.png", images: 60, prefix: "data/images/Shoses/image", rating: 4.2 },
     { id: 3, name: "T-shirt", price: 24.99, image: "data/images/Triko/image1.png", images: 48, prefix: "data/images/Triko/image", rating: 4.7 },
     { id: 4, name: "Montre", price: 79.99, image: "data/images/Watch/image1.png", images: 60, prefix: "data/images/Watch/image", rating: 4.8 }
 ];
